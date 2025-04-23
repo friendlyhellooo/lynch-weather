@@ -1,2 +1,2 @@
 # lynch-weather
-A weather app inspired by David Lynch's weather reports featured on KCRW.
+A weather app inspired by "David Lynch Theatre Presents: Weather Report", featured on KCRW.
