@@ -7,12 +7,32 @@ function App() {
   const [count, setCount] = createSignal(0);
 
   return (
-    <main class="flex-grow flex items-center justify-center p-8 bg-gradient-to-br from-indigo-900 to-purple-900 text-white">
-      <div class="bg-white text-black p-6 rounded-xl shadow-lg">
-        <h2 class="text-2xl font-bold mb-2">🌪 Tailwind Test</h2>
-        <p class="text-lg">If you can see this, Tailwind is working 🎉</p>
+    <div
+      class="min-h-screen bg-cover bg-center text-white font-sans p-6"
+      style={{ "background-image": "url('david-lynch-bg.png')" }}
+    >
+      {/* TOP ROW */}
+      <div class="flex justify-end mb-4">
+        <div class="flex flex-col gap-2 items-end">
+          <div class="bg-white/20 p-2 rounded">Los Angeles, CA</div>
+          <div class="bg-white/20 p-2 rounded">Thursday, May 1st 2025</div>
+        </div>
       </div>
-    </main>
+
+      {/* MIDDLE ROW */}
+      <div class="flex justify-end gap-4 mb-4">
+        <div class="bg-white/20 p-2 rounded">Image 1</div>
+        <div class="bg-white/20 p-2 rounded">Image 1</div>
+      </div>
+
+      {/* BOTTOM ROW */}
+      <div class="flex justify-between items-end">
+        <div class="bg-white/20 p-2 rounded">Image 1</div>
+        <div class="bg-white/20 p-2 rounded">
+          Lorem ipsum sans si dolor, abracadrabra abracadabra
+        </div>
+      </div>
+    </div>
   );
 }
 
