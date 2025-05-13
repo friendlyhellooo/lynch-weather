@@ -8,6 +8,7 @@ function App() {
 
   return (
     <div class="min-h-screen flex items-center justify-center">
+      {/* ^ This only centers the App in Vite/Browser, does not affect the rest of the layout below */}
       <div
         class="w-[400px] h-[300px] flex flex-col justify-between bg-cover bg-center text-white font-sans p-4 rounded shadow-lg"
         style={{ "background-image": "url('/david-lynch-bg.png')" }}
@@ -31,8 +32,8 @@ function App() {
 
         {/* 🔚 Bottom Row */}
         <div class="flex justify-between">
-          <div class="bg-white/20 p-2 rounded">Bottom Left</div>
-          <div class="bg-white/20 p-2 rounded">Bottom Right</div>
+          <div class="mr-4 bg-white/20 p-2 rounded">Image</div>
+          <div class="flex-grow bg-white/20 p-2 rounded">Bottom Right</div>
         </div>
       </div>
     </div>
